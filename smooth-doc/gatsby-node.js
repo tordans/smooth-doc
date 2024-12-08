@@ -140,7 +140,7 @@ function onCreateMdxNode({ node, getNode, actions }, options) {
       baseDirectory,
       '',
     )
-    return new URL(`edit/${githubDefaultBranch}${relativePath}`, repositoryURL).toString()
+    return new URL(`blob/edit/${githubDefaultBranch}${relativePath}`, repositoryURL).toString()
   }
 
   createNodeField({
